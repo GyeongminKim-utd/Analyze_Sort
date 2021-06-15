@@ -59,16 +59,5 @@ public class QuickSort {
 		}
 	}
 
-	public static void main(String[] args) {
-		int list[] = { 5,6,7,8,9,0,1,2,3,4 };
-		quickSort(list);
-		quickSort(list, list.length/2, list.length-1);
-		for (int i = 0; i < list.length; i++){
-			System.out.print(list[i] + " ");
-		}
-			System.out.println();
-			System.out.println("Number of Comparison: " + countcom);
-			System.out.println("Number of Movement: " + countmove);
-	}
 	
 }

@@ -23,20 +23,20 @@ public class InsertionSort {
 			
 		}
 	}
-	public static void main(String[] args) {
+	// public static void main(String[] args) {
 		
-		int[] list = {5,6,7,8,9,0,1,2,3,4};
+	// 	int[] list = {5,6,7,8,9,0,1,2,3,4};
 			
 		
-		insertionSort(list);
-		for(int i = 0; i < list.length;i++)
-		{
-			System.out.print(list[i]+ " ");
-		}	
+	// 	insertionSort(list);
+	// 	for(int i = 0; i < list.length;i++)
+	// 	{
+	// 		System.out.print(list[i]+ " ");
+	// 	}	
 		
-		System.out.println();
-		System.out.println("Number of Comparison: " + countcom);
-		System.out.println("Number of Movement: " + countmove);
-	}
+	// 	System.out.println();
+	// 	System.out.println("Number of Comparison: " + countcom);
+	// 	System.out.println("Number of Movement: " + countmove);
+	// }
 	
 }

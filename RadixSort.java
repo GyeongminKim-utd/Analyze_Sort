@@ -45,14 +45,14 @@ class RadixSort {
 			System.out.print(arr[i] + " ");
 	}
 	
-	public static void main(String[] args) {
-		int arr[] = { 5,6,7,8,9,0,1,2,3,4};
-		int n = arr.length;
-		print(arr, n);
-		radixsort(arr, n);
-		print(arr, n);
-		System.out.println("Number of Comparison: " + countcom);
-	 	System.out.println("Number of Movement: " + countmove);
-	}
+	// public static void main(String[] args) {
+	// 	int arr[] = { 5,6,7,8,9,0,1,2,3,4};
+	// 	int n = arr.length;
+	// 	print(arr, n);
+	// 	radixsort(arr, n);
+	// 	print(arr, n);
+	// 	System.out.println("Number of Comparison: " + countcom);
+	//  	System.out.println("Number of Movement: " + countmove);
+	// }
 	
 }

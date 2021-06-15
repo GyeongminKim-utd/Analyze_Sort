@@ -24,15 +24,15 @@ public class HeapSort {
 	}
 	
 	
-	public static void main(String[] args) {
-		Integer[] list = {9,8,7,6,5,4,3,2,1,0};
-		heapSort(list);
-		for(int i = 0; i < list.length; i++)
-			System.out.print(list[i] + " ");
-		System.out.println();
-		System.out.println("Number of Comparison: " + Heap.countcom);
-		System.out.println("Number of Movement: " + Heap.countmove);
-	}
+	// public static void main(String[] args) {
+	// 	Integer[] list = {9,8,7,6,5,4,3,2,1,0};
+	// 	heapSort(list);
+	// 	for(int i = 0; i < list.length; i++)
+	// 		System.out.print(list[i] + " ");
+	// 	System.out.println();
+	// 	System.out.println("Number of Comparison: " + Heap.countcom);
+	// 	System.out.println("Number of Movement: " + Heap.countmove);
+	// }
 
 
    
