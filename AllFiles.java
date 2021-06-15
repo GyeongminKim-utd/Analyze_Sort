@@ -122,9 +122,8 @@ public class AllFiles {
         System.out.println ("Insertion");
 		InsertionSort.insertionSort (inorder);
 	    long end = System.nanoTime();
-		long timeInNano = TimeUnit.NANOSECONDS.convert(end - start, TimeUnit.NANOSECONDS);
-        insertPrint();
-		System.out.println ("Time spend in ns: " + timeInNano);
+        long timeInMillis = TimeUnit.MILLISECONDS.convert(end - start, TimeUnit.NANOSECONDS);        insertPrint();
+		System.out.println ("Time spend in ns: " + timeInMillis);
 		System.out.println();
 
         //selection - inorder
@@ -132,9 +131,9 @@ public class AllFiles {
         System.out.println ("Selection");
 		SelectionSort.selectionSort (inorder);
 	    long end1 = System.nanoTime();
-		long timeInNano1 = TimeUnit.NANOSECONDS.convert(end1 - start1, TimeUnit.NANOSECONDS);
+        long timeInMillis1 = TimeUnit.MILLISECONDS.convert(end1 - start1, TimeUnit.NANOSECONDS);        insertPrint();
         selectPrint();
-		System.out.println ("Time spend in ns: " + timeInNano1);
+		System.out.println ("Time spend in ns: " + timeInMillis1);
 		System.out.println();
         
         //Heap - inorder
@@ -144,9 +143,9 @@ public class AllFiles {
         // System.out.println();
 		HeapSort.heapSort(inorderInt);
 	    long end2 = System.nanoTime();
-		long timeInNano2 = TimeUnit.NANOSECONDS.convert(end2 - start2, TimeUnit.NANOSECONDS);
+		long timeInMillis2 = TimeUnit.MILLISECONDS.convert(end2 - start2, TimeUnit.NANOSECONDS);
         heapPrint();
-		System.out.println ("Time spend in ns: " + timeInNano2);
+		System.out.println ("Time spend in ns: " + timeInMillis2);
 		System.out.println();
 
         //Radix - inorder
@@ -154,9 +153,9 @@ public class AllFiles {
         System.out.println ("Radix");
 		RadixSort.radixsort (inorder, a);
 	    long end3 = System.nanoTime();
-		long timeInNano3 = TimeUnit.NANOSECONDS.convert(end3 - start3, TimeUnit.NANOSECONDS);
+		long timeInMillis3 = TimeUnit.MILLISECONDS.convert(end3 - start3, TimeUnit.NANOSECONDS);
         radixPrint();
-		System.out.println ("Time spend in ns: " + timeInNano3);
+		System.out.println ("Time spend in ns: " + timeInMillis3);
 		System.out.println();
 
         //Quick - inorder
@@ -165,9 +164,9 @@ public class AllFiles {
 		QuickSort.quickSort (inorder);
         QuickSort.quickSort(inorder, a/2, a-1);
 	    long end4 = System.nanoTime();
-		long timeInNano4 = TimeUnit.NANOSECONDS.convert(end4 - start4, TimeUnit.NANOSECONDS);
+		long timeInMillis4 = TimeUnit.MILLISECONDS.convert(end4 - start4, TimeUnit.NANOSECONDS);
         quickPrint();
-		System.out.println ("Time spend in ns: " + timeInNano4);
+		System.out.println ("Time spend in ns: " + timeInMillis4);
 		System.out.println();
 
         //display reverseorder result
@@ -179,9 +178,9 @@ public class AllFiles {
         setReverse(reverseorder, a);
 		InsertionSort.insertionSort(reverseorder);
 	    long end6 = System.nanoTime();
-		long timeInNano6 = TimeUnit.NANOSECONDS.convert(end6 - start6, TimeUnit.NANOSECONDS);
+		long timeInMillis6 = TimeUnit.MILLISECONDS.convert(end6 - start6, TimeUnit.NANOSECONDS);
         insertPrint();
-		System.out.println ("Time spend in ns: " + timeInNano6);
+		System.out.println ("Time spend in ns: " + timeInMillis6);
 		System.out.println();
 
         //Selection - reverseorder
@@ -190,9 +189,9 @@ public class AllFiles {
         setReverse(reverseorder, a);
 		SelectionSort.selectionSort (reverseorder);
 	    long end7 = System.nanoTime();
-		long timeInNano7 = TimeUnit.NANOSECONDS.convert(end7 - start7, TimeUnit.NANOSECONDS);
+		long timeInMillis7 = TimeUnit.MILLISECONDS.convert(end7 - start7, TimeUnit.NANOSECONDS);
         selectPrint();
-		System.out.println ("Time spend in ns: " + timeInNano7);
+		System.out.println ("Time spend in ns: " + timeInMillis7);
 		System.out.println();
         
        // Heap - reverseorder
@@ -201,9 +200,9 @@ public class AllFiles {
         setReverseInt(reverseorderInt, a);
 		HeapSort.heapSort(reverseorderInt);
 	    long end8 = System.nanoTime();
-		long timeInNano8 = TimeUnit.NANOSECONDS.convert(end8 - start8, TimeUnit.NANOSECONDS);
+		long timeInMillis8 = TimeUnit.MILLISECONDS.convert(end8 - start8, TimeUnit.NANOSECONDS);
         heapPrint();
-		System.out.println ("Time spend in ns: " + timeInNano8);
+		System.out.println ("Time spend in ns: " + timeInMillis8);
 		System.out.println();
 
         //Radix - reverseorder
@@ -212,9 +211,9 @@ public class AllFiles {
         setReverse(reverseorder, a);
 		RadixSort.radixsort (reverseorder, a);
 	    long end9 = System.nanoTime();
-		long timeInNano9 = TimeUnit.NANOSECONDS.convert(end9 - start9, TimeUnit.NANOSECONDS);
+		long timeInMillis9 = TimeUnit.MILLISECONDS.convert(end9 - start9, TimeUnit.NANOSECONDS);
         radixPrint();
-		System.out.println ("Time spend in ns: " + timeInNano9);
+		System.out.println ("Time spend in ns: " + timeInMillis9);
 		System.out.println();
 
         //Quick - reverseorder
@@ -224,9 +223,9 @@ public class AllFiles {
 		QuickSort.quickSort (reverseorder);
         QuickSort.quickSort(reverseorder, a/2, a-1);
 	    long end10 = System.nanoTime();
-		long timeInNano10 = TimeUnit.NANOSECONDS.convert(end10 - start10, TimeUnit.NANOSECONDS);
+		long timeInMillis10 = TimeUnit.MILLISECONDS.convert(end10 - start10, TimeUnit.NANOSECONDS);
         quickPrint();
-		System.out.println ("Time spend in ns: " + timeInNano10);
+		System.out.println ("Time spend in ns: " + timeInMillis10);
 		System.out.println();
 
         //display randomorder result
@@ -238,9 +237,9 @@ public class AllFiles {
         setRandom(randomorder, a);
 		InsertionSort.insertionSort(randomorder);
 	    long end12 = System.nanoTime();
-		long timeInNano12 = TimeUnit.NANOSECONDS.convert(end12 - start12, TimeUnit.NANOSECONDS);
+		long timeInMillis12 = TimeUnit.MILLISECONDS.convert(end12 - start12, TimeUnit.NANOSECONDS);
         insertPrint();
-		System.out.println ("Time spend in ns: " + timeInNano12);
+		System.out.println ("Time spend in ns: " + timeInMillis12);
 		System.out.println();
 
         //Selection - randomorder
@@ -249,9 +248,9 @@ public class AllFiles {
         setRandom(randomorder, a);
        	SelectionSort.selectionSort (randomorder);
 	    long end13 = System.nanoTime();
-		long timeInNano13 = TimeUnit.NANOSECONDS.convert(end13 - start13, TimeUnit.NANOSECONDS);
+		long timeInMillis13 = TimeUnit.MILLISECONDS.convert(end13 - start13, TimeUnit.NANOSECONDS);
         selectPrint();
-		System.out.println ("Time spend in ns: " + timeInNano13);
+		System.out.println ("Time spend in ns: " + timeInMillis13);
 		System.out.println();
 
         //Heap - randomorder
@@ -260,9 +259,9 @@ public class AllFiles {
         setRandomInt(randomorderInt, a);
 		HeapSort.heapSort(randomorderInt);
 	    long end14 = System.nanoTime();
-		long timeInNano14 = TimeUnit.NANOSECONDS.convert(end14 - start14, TimeUnit.NANOSECONDS);
+		long timeInMillis14 = TimeUnit.MILLISECONDS.convert(end14 - start14, TimeUnit.NANOSECONDS);
         heapPrint();
-		System.out.println ("Time spend in ns: " + timeInNano14);
+		System.out.println ("Time spend in ns: " + timeInMillis14);
 		System.out.println();
 
         //Radix - randomorder
@@ -271,9 +270,9 @@ public class AllFiles {
         setRandom(randomorder, a);
 		RadixSort.radixsort (randomorder, a);
 	    long end15 = System.nanoTime();
-		long timeInNano15 = TimeUnit.NANOSECONDS.convert(end15 - start15, TimeUnit.NANOSECONDS);
+		long timeInMillis15 = TimeUnit.MILLISECONDS.convert(end15 - start15, TimeUnit.NANOSECONDS);
         radixPrint();
-		System.out.println ("Time spend in ns: " + timeInNano15);
+		System.out.println ("Time spend in ns: " + timeInMillis15);
 		System.out.println();
 
         //Quick - randomorder
@@ -283,9 +282,9 @@ public class AllFiles {
 		QuickSort.quickSort (randomorder);
         QuickSort.quickSort(randomorder, a/2, a-1);
 	    long end16 = System.nanoTime();
-		long timeInNano16 = TimeUnit.NANOSECONDS.convert(end16 - start16, TimeUnit.NANOSECONDS);
+		long timeInMillis16 = TimeUnit.MILLISECONDS.convert(end16 - start16, TimeUnit.NANOSECONDS);
         quickPrint();
-		System.out.println ("Time spend in ns: " + timeInNano16);
+		System.out.println ("Time spend in ns: " + timeInMillis16);
 		System.out.println();
 
         //display almostorder result
@@ -297,9 +296,9 @@ public class AllFiles {
         setAlmost(almostorder, inorder, a);
 		InsertionSort.insertionSort(almostorder);
 	    long end18 = System.nanoTime();
-		long timeInNano18 = TimeUnit.NANOSECONDS.convert(end18 - start18, TimeUnit.NANOSECONDS);
+		long timeInMillis18 = TimeUnit.MILLISECONDS.convert(end18 - start18, TimeUnit.NANOSECONDS);
         insertPrint();
-		System.out.println ("Time spend in ns: " + timeInNano18);
+		System.out.println ("Time spend in ns: " + timeInMillis18);
 		System.out.println();
 
         //Selection - almostorder
@@ -308,9 +307,9 @@ public class AllFiles {
         setAlmost(almostorder, inorder, a);
 		SelectionSort.selectionSort (almostorder);
 	    long end19 = System.nanoTime();
-		long timeInNano19 = TimeUnit.NANOSECONDS.convert(end19 - start19, TimeUnit.NANOSECONDS);
+		long timeInMillis19 = TimeUnit.MILLISECONDS.convert(end19 - start19, TimeUnit.NANOSECONDS);
         selectPrint();
-		System.out.println ("Time spend in ns: " + timeInNano19);
+		System.out.println ("Time spend in ns: " + timeInMillis19);
 		System.out.println();
 
         //Heap - almostorder
@@ -319,9 +318,9 @@ public class AllFiles {
         setAlmostInt(almostorderInt, inorderInt, a);
 		HeapSort.heapSort(almostorderInt);
 	    long end20 = System.nanoTime();
-		long timeInNano20 = TimeUnit.NANOSECONDS.convert(end20 - start20, TimeUnit.NANOSECONDS);
+		long timeInMillis20 = TimeUnit.MILLISECONDS.convert(end20 - start20, TimeUnit.NANOSECONDS);
         heapPrint();
-		System.out.println ("Time spend in ns: " + timeInNano20);
+		System.out.println ("Time spend in ns: " + timeInMillis20);
 		System.out.println();
 
         //Radix - almostorder
@@ -330,9 +329,9 @@ public class AllFiles {
         setAlmost(almostorder, inorder, a);
         RadixSort.radixsort (almostorder, a);
         long end21 = System.nanoTime();
-        long timeInNano21 = TimeUnit.NANOSECONDS.convert(end21 - start21, TimeUnit.NANOSECONDS);
+        long timeInMillis21 = TimeUnit.MILLISECONDS.convert(end21 - start21, TimeUnit.NANOSECONDS);
         radixPrint();
-        System.out.println ("Time spend in ns: " + timeInNano21);
+        System.out.println ("Time spend in ns: " + timeInMillis21);
         System.out.println();
 
         //Quick - almostorder
@@ -342,9 +341,9 @@ public class AllFiles {
 		QuickSort.quickSort (almostorder);
         QuickSort.quickSort(almostorder, a/2, a-1);
 	    long end22 = System.nanoTime();
-		long timeInNano22 = TimeUnit.NANOSECONDS.convert(end22 - start22, TimeUnit.NANOSECONDS);
+		long timeInMillis22 = TimeUnit.MILLISECONDS.convert(end22 - start22, TimeUnit.NANOSECONDS);
         quickPrint();
-		System.out.println ("Time spend in ns: " + timeInNano22);
+		System.out.println ("Time spend in ns: " + timeInMillis22);
 		System.out.println();
 
     }
