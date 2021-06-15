@@ -3,7 +3,7 @@ public class MergeSort {
 	static int countcom = 0;
 	static int countmove = 0;
 	/**	The method for sorting the numbers */
-	public void mergeSort(int[] list) {
+	public static void mergeSort(int[] list) {
 		if (list.length > 1) {
 			//	Merge sort the first half
 			int [] firstHalf = new int[list.length / 2];
@@ -53,20 +53,20 @@ public class MergeSort {
 	}
 	
 	
-	// public static void main(String[] args) {
+	public static void main(String[] args) {
 		
-	// 	int[] list = new int[50000];
-	// 	for(int i = 0; i < list.length;i++)
-	// 	{
-	// 		list[i] = i+1;
-	// 	}		
+		int[] list = new int[50000];
+		for(int i = 0; i < list.length;i++)
+		{
+			list[i] = i;
+		}		
 		
-	// 	mergeSort(list);
+		mergeSort(list);
 		
-	// 	System.out.println();
-	// 	System.out.println("Number of Comparison: " + countcom);
-	// 	System.out.println("Number of Movement: " + countmove);
-	// }
+		System.out.println();
+		System.out.println("Number of Comparison: " + countcom);
+		System.out.println("Number of Movement: " + countmove);
+	}
 	
 }
 
