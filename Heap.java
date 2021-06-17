@@ -8,22 +8,6 @@ public class Heap<E extends Comparable<E>> {
 	public Heap() {
 	}
 	
-	public static int getCountcom() {
-		return countcom;
-	}
-
-	public static void setCountcom(int countcom) {
-		Heap.countcom = countcom;
-	}
-
-	public static int getCountmove() {
-		return countmove;
-	}
-
-	public static void setCountmove(int countmove) {
-		Heap.countmove = countmove;
-	}
-
 	/** Create a heap from an array of objects */
 	public Heap(E[] objects) {
 		for (int i = 0; i < objects.length; i++)
@@ -69,14 +53,13 @@ public class Heap<E extends Comparable<E>> {
 			
 			//	Find the maximum between two children
 			if (leftChildIndex >= list.size()){
-				countcom++;
+				//countcom++;
 				break; // The tree is a heap
 			}
 			int maxIndex = leftChildIndex;
 			if (rightChildIndex < list.size()) {
-				countcom++;
-				if (list.get(maxIndex).compareTo( 
-						list.get(rightChildIndex)) < 0) {
+				if (list.get(maxIndex).compareTo(list.get(rightChildIndex)) < 0) {
+					countcom++;
 					maxIndex = rightChildIndex;
 				}		
 			}

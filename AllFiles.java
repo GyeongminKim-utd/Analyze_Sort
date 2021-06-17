@@ -25,9 +25,8 @@ public class AllFiles {
     }
 
     static void radixPrint() {
-        System.out.println ("Number of Comparison: " + RadixSort.countcom);
+        System.out.println ("Number of Comparison: 0");
         System.out.println ("Number of Movement: " + RadixSort.countmove);
-        RadixSort.countcom = 0;
         RadixSort.countmove = 0;
     }
 
