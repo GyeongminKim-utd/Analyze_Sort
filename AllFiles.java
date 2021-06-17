@@ -358,7 +358,7 @@ public class AllFiles {
         long start42 = System.nanoTime();
         System.out.println ("Merge");
         setAlmost(almostorder, inorder, a);
-		MergeSort.mergeSort (almostorder);
+    	MergeSort.mergeSort (almostorder);
 	    long end42 = System.nanoTime();
 		long timeInMillis42 = TimeUnit.MILLISECONDS.convert(end42 - start42, TimeUnit.NANOSECONDS);
         mergePrint();
@@ -369,7 +369,7 @@ public class AllFiles {
         long start20 = System.nanoTime();
         System.out.println ("Heap");
         setAlmostInt(almostorderInt, inorderInt, a);
-		HeapSort.heapSort(almostorderInt);
+        HeapSort.heapSort(almostorderInt);
 	    long end20 = System.nanoTime();
 		long timeInMillis20 = TimeUnit.MILLISECONDS.convert(end20 - start20, TimeUnit.NANOSECONDS);
         heapPrint();

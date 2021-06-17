@@ -53,20 +53,20 @@ public class MergeSort {
 	}
 	
 	
-	public static void main(String[] args) {
+	// public static void main(String[] args) {
 		
-		int[] list = new int[50000];
-		for(int i = 0; i < list.length;i++)
-		{
-			list[i] = i;
-		}		
+	// 	int[] list = new int[50000];
+	// 	for(int i = 0; i < list.length;i++)
+	// 	{
+	// 		list[i] = i;
+	// 	}		
 		
-		mergeSort(list);
+	// 	mergeSort(list);
 		
-		System.out.println();
-		System.out.println("Number of Comparison: " + countcom);
-		System.out.println("Number of Movement: " + countmove);
-	}
+	// 	System.out.println();
+	// 	System.out.println("Number of Comparison: " + countcom);
+	// 	System.out.println("Number of Movement: " + countmove);
+	// }
 	
 }
 
